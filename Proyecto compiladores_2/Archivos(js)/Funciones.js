@@ -46,19 +46,33 @@ function concatenacion(lista1,lista2){
     let l1=0,l2=0,j=0,tm=lista1.length,tam2=lista2.length;
     let Final=[]; 
     while(l1<tm){
-        for(let i=0;i<10000;i++){
             if(l2<tam2 && l1<tm){
                 Final.push(lista1[l1]+lista2[l2]);
                 l2++;
             }
             j++;
-        }
+        
         if(l2==tam2){
         l1++;
         l2=0;
         }
     }
-return Final;   
+  return Final;   
+}
+var Final=[]; 
+function concatenacion(lista1,lista2,l1,l2,tam2,tm){
+    let j=0,
+    if(l1<tm){
+        Final.push(lista1[l1]+lista2[l2]) 
+        if(l2<tam2 && l1<tm){
+            l2++;
+        }
+        j++;
+     if(l2==tam2){
+       l1++;
+       l2=0;
+     }
+    }
 }
 
 
@@ -72,8 +86,10 @@ function Potencia(LI,LF,P){
     }
 }
 function Potencia2(LI,LF,P){
+    let tm,tam2;
     for(let i=0;i<P-1;i++){
-        LF=concatenacion(LI,LF);
+        tm=lista1.length,tam2=lista2.length;
+        LF=concatenacion(LI,LF,0,0,tam2,tm);
     }
     return LF;
 }

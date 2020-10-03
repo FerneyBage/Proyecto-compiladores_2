@@ -9,7 +9,7 @@ function lenguajes(){
 
    switch (Sel_Len){   
       case "Potencia De Un Lenguaje": {
-         ResultadoV.value = Potencia2(Lista_1, Lista_1, 20);
+         ResultadoV.value = Potencia2(Lista_1, Lista_1, 2);
          break;
       }
       case "Inverso De Un Lenguaje": {
