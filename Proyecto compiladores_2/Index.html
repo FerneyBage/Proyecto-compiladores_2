@@ -1,0 +1,100 @@
+<!DOCTYPE>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguajes Formales</title>
+    <link rel="icon" href="Imagenes/favicon.ico">
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body> 
+    <header>       
+        <a href ="Index.html" class="logo-act">
+            <img src = "Imagenes/first-Logo.png" title="Lenguajes Formales">
+        </a>
+        <div class="colombia-logo">
+            <img src="Imagenes/colombia.png" alt="">
+        </div>
+        <div class="logo-menu">    
+            <input type="checkbox" id="boton-menu">
+            <label for="boton-menu" id="label-boton-menu"><img src="Imagenes/logo-menu.png" alt="" title="Aplicacione y Repositorios"></label>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="https://github.com/Wilkar/buscaminas" target="blank">
+                            <img src="Imagenes/github.png"  title="Repositorio" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </nav>  
+        </div>
+    </header>
+    
+</div>
+    <div class = "container-input">
+        <div class = "seleccionador-lenguaje">
+            <ul>
+                <label for="lenguaje" >Lenguaje</label>
+                <select name="" id="lenguaje">                   
+                    <option value="" selected disabled> Selecione una opcion</option>
+                    <option value="" id=""> Union De Lenguajes</option>
+                    <option value="" id=""> Diferencia De Lenguajes</option>
+                    <option value="" id=""> Intersección De Lenguajes</option>
+                    <option value="" id=""> Concatenación De Lenguajes</option>
+                    <option value="" id=""> Inverso De Un Lenguaje</option>
+                    <option value="" id=""> Cardinal De Un Lenguaje</option>
+                    <option value="" id=""> Potencia De Un Lenguaje</option>
+                </select>
+                <button id="enviar-lenguajes" onclick="lenguajes()">CALCULAR</button>
+            </ul>
+        </div>   
+        <textarea class="textarea1" placeholder="Introduzca aquí el lenguaje" name="" maxlength="1000" id="Lenguaaje 1" rows="7"></textarea>
+        <textarea class="textarea2" placeholder="Introduzca aquí el lenguaje" name="" maxlength="1000" id="Lenguaaje 2" rows="7"></textarea>
+        
+
+        <div class="seleccionador-alfabeto">
+            <ul>
+                <label for="alfabeto">Alfabetos</label>
+                <select name="" id="alfabeto">
+                    <option value="" selected disabled>    Selecione una opcion</option>
+                    <option value="" id=""> Union De Alfabetos</option>
+                    <option value="" id=""> Diferencia De Alfabetos</option>
+                    <option value="" id=""> Intersección De Alfabetos</option>
+                </select>
+                <button id="enviar-lenguajes"onclick="AlfabetosF()">CALCULAR</button>
+            </ul>
+        </div>
+        <textarea class="textarea-alfabeto1" placeholder="Introduzca aquí el alfabeto" name="" maxlength="1000" id="Alfabeto 1" rows="7"></textarea>
+        <textarea class="textarea-alfabeto2" placeholder="Introduzca aquí el alfabeto" name="" maxlength="1000" id="Alfabeto 2" rows="7"></textarea>
+        
+
+        <div class="seleccionador-palabra">
+            <ul>
+                <label for="palabra">Palabra</label>
+
+                <select name="" id="palabra">
+                    <option value="" selected disabled>    Selecione una opcion</option>
+                    <option value="" id=""> Cardinal De Una Palabra</option>
+                    <option value=""id=""> Inversa De Una Palabra</option>
+                </select>
+                <button onclick="palabra()">CALCULAR</button>
+            </ul>    
+        </div>
+        <textarea class="textarea-palabra" name="" placeholder="Introduzca aqui una palabra" id="Palabra" rows="7"></textarea>
+    </div>
+
+    <div>
+        <p class="p-resultado"><strong>RESULTADO</strong><p>
+        <textarea disabled class="textarea3" placeholder="Resultado" name=""  id="Resultado" rows="7"></textarea>
+    </div>
+   <footer>
+       <div class="creators">
+           <img src="Imagenes/creators.png" title="Diseñadores y Desarrolladores" alt="">
+       </div>    
+   </footer> 
+    <script src="Archivos(js)/LamarF.js"></script>
+    <script src="Archivos(js)/Funciones.js"></script>
+    <script src="Archivos(js)/ConvertirL.js"></script>
+</body>
+</html>

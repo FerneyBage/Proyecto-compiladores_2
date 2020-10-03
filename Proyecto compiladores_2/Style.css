@@ -1,0 +1,172 @@
+body{
+    background-color: #e6e6e6;
+    margin: 0;
+}
+
+header{
+    background-color:#ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-style: inset;
+    border-width: 1px;
+    border-color: #CFD3C9;
+}
+
+header div{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.colombia-logo{
+    margin-top:-45px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+.logo-act img{
+    position: block;
+    padding: 0.45cm 0.5cm 0.3cm 1%;
+}
+#label-boton-menu{
+    position: block;
+    margin-top: -45px;
+    margin-bottom: 20px;
+    margin-right: 80px;
+}
+
+#boton-menu{
+    display: none;
+}
+
+.logo-menu label, img :hover{
+    cursor: pointer;
+}
+  
+.menu{
+    position: fixed;
+    right: -100cm;
+
+}
+
+.menu li{
+    position: relative;
+    list-style:none;
+    padding: 0.4cm;
+    background-color: #ffffff;
+}
+
+.menu li :hover{
+    background-color: gray;
+}
+
+#boton-menu:checked~.menu{
+    margin-top: -10px;
+    right: 5px;
+}
+
+.container-input{
+    margin-top: 3cm;
+    margin-bottom: 2cm;
+}
+
+.seleccionador-lenguaje, .seleccionador-alfabeto ,.seleccionador-palabra{
+    display: flex;
+    justify-content: center;
+}
+
+select{
+    margin:0 1cm 0.5cm 0.2cm;
+    line-height: 35px;
+    width: 200px;
+    background-color:white;
+    font-size: 15px;
+    font-family: Tahoma;
+    appearance: none;
+    background-color:#ffffff;
+    border: 1px solid #000000;
+    border-radius: 8px;
+}
+
+.seleccionador-lenguaje, .seleccionador-alfabeto, .seleccionador-palabra label{
+    font-family: sans-serif;
+}
+
+button{
+    margin: 0.5cm;
+    width: 90px;
+    height: 30px;
+    background-color:white;
+    border-radius: 0cm;
+}
+
+select, option :hover{
+    cursor: pointer;
+}
+
+footer{
+    background-color:#ffffff;
+    left: 0;
+    right:0;
+    bottom: 0;
+    border-style: inset;
+    border-width: 1px;
+    border-color: #CFD3C9;
+    display: flex;
+    justify-content: center;
+}
+
+textarea{
+    font-family: Tahoma;
+    font-size: 20px;
+    padding:0.75cm 1.25cm 0.75cm 0.75cm ;
+    resize: none;
+    display: inline-block;
+    /*overflow:hidden;*/
+    border: 1px solid black;
+}
+
+.textarea1, .textarea-alfabeto1{
+    width: 30%;
+    margin-left:23%;
+    margin-right: auto;
+    margin-bottom: 2cm;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.textarea2, .textarea-alfabeto2{
+    width: 30%;
+    margin-right:0;
+    margin-left:-5px; 
+    margin-bottom: 2cm; 
+    border-radius: 0px 15px 15px 0px;  
+}
+
+.textarea-palabra{
+    margin-left: 30%;
+    padding: 0.2cm;
+    border-radius: 15px;
+    width: 45.5%;
+    height: 80px;
+}
+
+.p-resultado{
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.textarea3{
+    background-color: white;
+    width: 60%;
+    margin-left:23%;
+    margin-bottom: 5.5cm; 
+    border-radius: 15px;
+}
+.creators{
+    padding: 1cm 0;
+}
+
+
