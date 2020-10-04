@@ -9,7 +9,9 @@ function lenguajes(){
 
    switch (Sel_Len){   
       case "Potencia De Un Lenguaje": {
-         ResultadoV.value = Potencia2(Lista_1, Lista_1, 15);
+         let Num=document.getElementById("exponente").value;
+         Num=parseInt(Num);
+         ResultadoV.value = Potencia2(Lista_1, Lista_1, Num);
          break;
       }
       case "Inverso De Un Lenguaje": {
