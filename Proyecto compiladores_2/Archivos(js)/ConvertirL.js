@@ -1,21 +1,22 @@
 function recibirLeng(){
-    var Leng_1="";
+    var leng_1="";
     var leng_2="";
     leng_1=document.getElementById("Lenguaaje 1").value;
     leng_2=document.getElementById("Lenguaaje 2").value;
     Lista_1=Conlist(leng_1);
     Lista_2=Conlist(leng_2);
     Lista_1=eliminarRep(Lista_1);
-   
+    Lista_2=eliminarRep(Lista_2);
 }
 function recibirAlfa(){
-    var Leng_1="";
+    var leng_1="";
     var leng_2="";
     leng_1=document.getElementById("Alfabeto 1").value;
     leng_2=document.getElementById("Alfabeto 2").value;
     Lista_1=Conlist(leng_1);
     Lista_2=Conlist(leng_2);
     Lista_1=eliminarRep(Lista_1);
+    Lista_2=eliminarRep(Lista_2);
 }
 function Conlist(s,V){
     let conc="";
