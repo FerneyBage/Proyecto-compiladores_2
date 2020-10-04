@@ -45,7 +45,7 @@ function lenguajes(){
          break;
       }
       case "Concatenación De Lenguajes": {
-         ResultadoV.value= "{" + Concatenacion(Lista_1,Lista_2) + "}";
+         ResultadoV.value= "{" + Concatenacion(Lista_1,Lista_2,"V") + "}";
          break;
       }
    }
