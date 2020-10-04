@@ -41,35 +41,31 @@ function InversaL(LenguajeC){
   return LenguajeI;
 }
 
-function concatenacion(lista1,lista2){
-    var ResultadoV=document.getElementById("Resultado");
-    let l1=0,l2=0,j=0,tm=lista1.length,tam2=lista2.length;
+function Concatenacion(lista1,lista2,V){
+    let l1=0,l2=0,tm=lista1.length,tam2=lista2.length;
     let Final=[]; 
     while(l1<tm){
-            if(l2<tam2 && l1<tm){
+        if(l2<tam2){
+            if(lista1[l1]!=V && lista2[l2]!=V){
                 Final.push(lista1[l1]+lista2[l2]);
-                l2++;
+            }else if(lista1[l1]===V){
+                Final.push(lista2[l2]);
+            }else if(lista2[l2]===V){
+                Final.push(lista1[l1]);
             }
-            j++;
-        
+            l2++; 
+        }
         if(l2==tam2){
-        l1++;
-        l2=0;
+            l1++;
+            l2=0;
         }
     }
-  return Final;   
+    return Final;
 }
 
-function Potencia(LI,LF,P){
-    if(P<=1){
-        return LF;
-    }else{
-        return Potencia(LI,Conc(LI,LF),P-1);
-    }
-}
-function Potencia2(LI,LF,P){
+function Potencia(LI,LF,P,V){
     for(let i=0;i<P-1;i++){
-        LF=concatenacion(LI,LF);
+        LF=Concatenacion(LI,LF,V);
     }
     return LF;
 }

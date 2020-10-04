@@ -11,7 +11,7 @@ function lenguajes(){
       case "Potencia De Un Lenguaje": {
          let Num=document.getElementById("exponente").value;
          Num=parseInt(Num);
-         ResultadoV.value = Potencia2(Lista_1, Lista_1, Num);
+         ResultadoV.value = Potencia(Lista_1, Lista_1, Num,"V");
          break;
       }
       case "Inverso De Un Lenguaje": {
@@ -49,8 +49,6 @@ function lenguajes(){
          break;
       }
    }
-      
-
 }
 
 function AlfabetosF(){
