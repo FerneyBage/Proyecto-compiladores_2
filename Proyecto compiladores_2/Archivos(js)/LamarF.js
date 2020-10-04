@@ -11,11 +11,11 @@ function lenguajes(){
       case "Potencia De Un Lenguaje": {
          let Num=document.getElementById("exponente").value;
          Num=parseInt(Num);
-         ResultadoV.value = Potencia(Lista_1, Lista_1, Num,"V");
+         ResultadoV.value = "{" + Potencia(Lista_1, Lista_1, Num,"V") + "}";
          break;
       }
       case "Inverso De Un Lenguaje": {
-         ResultadoV.value = InversaL(Lista_1);
+         ResultadoV.value = "{" + InversaL(Lista_1) + "}";
          break;
       }
       case "Cardinal De Un Lenguaje": {
@@ -31,7 +31,7 @@ function lenguajes(){
          if(R.length==0){
             ResultadoV.value="vacio";
          }else{
-            ResultadoV.value=R;
+            ResultadoV.value="{" + R + "}";
          }
          break;
       }
@@ -40,12 +40,12 @@ function lenguajes(){
          if(R.length==0){
             ResultadoV.value="vacio";
          }else{
-            ResultadoV.value=R;
+            ResultadoV.value="{" + R + "}";
          }
          break;
       }
       case "Concatenación De Lenguajes": {
-         ResultadoV.value=concatenacion(Lista_1,Lista_2);
+         ResultadoV.value= "{" + Concatenacion(Lista_1,Lista_2) + "}";
          break;
       }
    }
@@ -59,7 +59,7 @@ function AlfabetosF(){
 
    switch(Sel_Alf){
       case "Union De Alfabetos":{
-         ResultadoV.value=Union(Lista_1,Lista_2);
+         ResultadoV.value="{" + Union(Lista_1, Lista_2) + "}";
          break;
       }
       case "Diferencia De Alfabetos":{
@@ -67,7 +67,7 @@ function AlfabetosF(){
          if(R.length==0){
             ResultadoV.value="vacio";
          }else{
-            ResultadoV.value=R;
+            ResultadoV.value="{" + R + "}";
          }
          break;
       }
@@ -76,7 +76,7 @@ function AlfabetosF(){
          if(R.length==0){
             ResultadoV.value="vacio";
          }else{
-            ResultadoV.value=R;
+            ResultadoV.value="{" + R + "}";
          }
          break;
       }

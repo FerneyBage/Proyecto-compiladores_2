@@ -63,7 +63,7 @@ function Concatenacion(lista1,lista2,V){
 }
 function Potencia(LI,LF,P,V){
     for(let i=0;i<P-1;i++){
-        LF=Concatenacion(LI,LF,v);
+        LF=Concatenacion(LI,LF,V);
     }
     return LF;
 }
