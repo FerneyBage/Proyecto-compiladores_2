@@ -40,7 +40,6 @@ function InversaL(LenguajeC){
   }
   return LenguajeI;
 }
-
 function Concatenacion(lista1,lista2,V){
     let l1=0,l2=0,tm=lista1.length,tam2=lista2.length;
     let Final=[]; 
@@ -62,10 +61,9 @@ function Concatenacion(lista1,lista2,V){
     }
     return Final;
 }
-
 function Potencia(LI,LF,P,V){
     for(let i=0;i<P-1;i++){
-        LF=Concatenacion(LI,LF,V);
+        LF=Concatenacion(LI,LF,v);
     }
     return LF;
 }
