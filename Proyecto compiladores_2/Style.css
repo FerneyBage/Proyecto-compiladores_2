@@ -66,8 +66,17 @@ header div{
     right: 5px;
 }
 
+.p-vacio{
+    display: flex;
+    justify-content: center;
+
+    margin: 2cm 5% 0 5%;
+    font-size: 20px;
+    font-family: tahoma;
+}
+
 .container-input{
-    margin-top: 3cm;
+    margin-top: 0cm;
     margin-bottom: 2cm;
 }
 
@@ -162,11 +171,12 @@ textarea{
     background-color: white;
     width: 60%;
     margin-left:23%;
-    margin-bottom: 5.5cm; 
+    margin-bottom: 2cm; 
     border-radius: 15px;
 }
 .creators{
     padding: 1cm 0;
 }
+
 
 

@@ -13,16 +13,18 @@
         <a href ="Index.html" class="logo-act">
             <img src = "Imagenes/first-Logo.png" title="Lenguajes Formales">
         </a>
+        
         <div class="colombia-logo">
             <img src="Imagenes/colombia.png" alt="">
         </div>
+
         <div class="logo-menu">    
             <input type="checkbox" id="boton-menu">
             <label for="boton-menu" id="label-boton-menu"><img src="Imagenes/logo-menu.png" alt="" title="Aplicacione y Repositorios"></label>
             <nav class="menu">
                 <ul>
                     <li>
-                        <a href=https://github.com/BaruxaGBF/Proyecto-Compiladores-Leng target="blank">
+                        <a href="https://github.com/Wilkar/buscaminas" target="blank">
                             <img src="Imagenes/github.png"  title="Repositorio" alt="">
                         </a>
                     </li>
@@ -32,6 +34,13 @@
     </header>
     
 </div>
+    <div class="p-vacio">
+        <p>
+            <strong>
+                El simbolo vacio para este programa esta representado por "V", tener en cuenta a la hora de agregar los datos.
+            </strong>
+        </p>
+    </div>
     <div class = "container-input">
         <div class = "seleccionador-lenguaje">
             <ul>
@@ -46,6 +55,8 @@
                     <option value="" id=""> Cardinal De Un Lenguaje</option>
                     <option value="" id=""> Potencia De Un Lenguaje</option>
                 </select>
+                <label for="exponente">Exponente </label>
+                <input type="number" id="exponente" maxlength="2" min="1" max="20"/>
                 <button id="enviar-lenguajes" onclick="lenguajes()">CALCULAR</button>
             </ul>
         </div>   
@@ -62,11 +73,11 @@
                     <option value="" id=""> Diferencia De Alfabetos</option>
                     <option value="" id=""> Intersección De Alfabetos</option>
                 </select>
-                <button id="enviar-lenguajes"onclick="AlfabetosF()">CALCULARferney</button>
+                <button id="enviar-lenguajes"onclick="alfabeto()">CALCULAR</button>
             </ul>
         </div>
-        <textarea class="textarea-alfabeto1" placeholder="Introduzca aquí el alfabeto" name="" maxlength="1000" id="Alfabeto 1" rows="7"></textarea>
-        <textarea class="textarea-alfabeto2" placeholder="Introduzca aquí el alfabeto" name="" maxlength="1000" id="Alfabeto 2" rows="7"></textarea>
+        <textarea class="textarea-alfabeto1" placeholder="Introduzca aquí el alfabeto" name="" maxlength="1000" id="Lenguaaje 1" rows="7"></textarea>
+        <textarea class="textarea-alfabeto2" placeholder="Introduzca aquí el alfabeto" name="" maxlength="1000" id="Lenguaaje 2" rows="7"></textarea>
         
 
         <div class="seleccionador-palabra">
